@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+        <main>
+            <div class="preloder">
+                <img class="preloder-img" src="/image/pngegg.png">
+            </div>
+            <div class="box-1 box wrap">
+                <div class="box-content">
+                    <div class="box-image">
+                        <img src="image/1.jpg" width="300">
+                    </div>     
+                    <h1 class="box-header">
+                        Для моего самого любимого человека
+                    </h1>      
+                    <button  class="button button-1" type="button">Дальше</button>         
+                </div>
+            </div>
+            <div class="box-2 box wrap">
+                <div class="box-content">
+                    <div class="box-image">
+                        <img  src="/image/mage2.jpg" alt="">
+                    </div>     
+                    <p class="box-text">
+                        Как ты ушла я потерял себя <br>
+                        Не вижу смысла в этой жизни<br>
+                        Мы через многое прошли<br>
+                        И без поддержки я твоей не справлюсь <br>
+                    </p>              
+                    <button  class="button button-2" type="button">Дальше</button>     
+                </div>
+            </div>
+            <div class="box-3 box wrap">
+                <div class="box-content">
+                    <div class="box-image">
+                        <img src="image/mage1.jpg" alt="">
+                    </div>     
+                    <p class="box-text">
+                        Почти 3 года мы с тобой<br>
+                        И все заканчивать так глупо<br>
+                        Уйти и не вернуться <br>
+                        Оставив отпечаток на душе<br>
+                    </p>  
+                    <button  class="button button-3" type="button">Дальше</button>                  
+                </div>
+            </div>
+            <div class="box-4 box wrap">
+                <div class="box-content">
+                    <div class="box-image">
+                        <img src="image/mage4.jpg" alt="">
+                    </div>     
+                    <p class="box-text">
+                        Мне смертельно больно думать о тебе<br>
+                        О том что больше не вернешься <br>
+                        Просыпаться с болью в сердце по утрам<br>
+                        И проводить с ней каждый день<br>
+                    </p>   
+                    <button  class="button button-4" type="button">Дальше</button>                 
+                </div>
+            </div>
+            <div class="box-5 box wrap">
+                <div class="box-content">
+                    <div class="box-image">
+                        <img src="image/BjsCgm6ob64.jpg" alt="">
+                    </div>     
+                    <p class="box-text">
+                        Но все же есть надежда <br>
+                        Что ты вернешься вновь ко мне <br>
+                        Растает лед и снова мне посветит солнце<br>
+                    </p>           
+                    <button  class="button button-5" type="button">Дальше</button>         
+                </div>
+            </div>
+            <div class="box-6 box wrap">
+                <div class="box-content">
+                    <div class="box-image">
+                        <img src="image/mage3.jpg" alt="">
+                    </div>     
+                    <p class="box-text" style="font-size: 25px; text-align: center;">
+                        Моя любовь навеки
+                    </p>               
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+
+        setTimeout(function () {
+            document.querySelector('.preloder').classList.add('preloder-remive')
+        }, 3000)
+        setTimeout(function () {
+            document.querySelector('.box-1').classList.add('active')
+        }, 3000)
+
+        document.querySelector('.button-1').addEventListener('click', function() {
+            document.querySelector('.box-1').classList.remove('active')
+            document.querySelector('.box-2').classList.add('active')
+        })
+        document.querySelector('.button-2').addEventListener('click', function() {
+            document.querySelector('.box-3').classList.add('active')
+            document.querySelector('.box-2').classList.remove('active')
+        })
+        document.querySelector('.button-3').addEventListener('click', function() {
+            document.querySelector('.box-3').classList.remove('active')
+            document.querySelector('.box-4').classList.add('active')
+        })
+        document.querySelector('.button-4').addEventListener('click', function() {
+            document.querySelector('.box-5').classList.add('active')
+            document.querySelector('.box-4').classList.remove('active')
+        })
+        document.querySelector('.button-5').addEventListener('click', function() {
+            document.querySelector('.box-5').classList.remove('active')
+            document.querySelector('.box-6').classList.add('active')
+        })
+    </script>
+</html>
+
